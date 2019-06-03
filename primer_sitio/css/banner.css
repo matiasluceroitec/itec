@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+#contenedora {width: 100%; margin: 0px; padding: 0px;
+    border:1px solid #000000;
+    background-image: url(c:/Matias/Programacion_II/proyecto_programacion/img/fuegoartificial.jpg)
+    , linear-gradient(rgb(98, 98, 105),rgb(75, 75, 78)) ;
+    background-size:150%;
+    background-blend-mode: screen; background-position: fixed;
+    }
+    
+#menu { width: 100%; height: 50px;
+    position: fixed;
+    background: rgb(2,0,36);
+    background: linear-gradient( rgb(9, 137, 211) 0%, rgb(244, 244, 245) 23%, rgb(9, 137, 211) 0%);
+    border: 1px; border-color: black; 
+    }
+
+#menu img {width: 70px; margin: 2px; float:left;
+    padding-right: 360px; padding-left: 20px;
+    }
+#menu p{float: left;font-size: 30px;
+    font-family: "Edwardian Script ITC";
+    color: white;
+    padding-top: 10px;}
+
+
+
+ul, ol {list-style: none; height: 50px;
+    }
+
+.nav > li {float: right;
+        margin-right: 10px;}
+.nav li a {
+    background-color: transparent;
+    font-size: 15px;
+    padding-left: 10px;
+    color: rgb(230, 231, 238);
+    text-decoration:none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block; 
+    text-align: center;
+    padding-top: 15px;
+   }
+
+   .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    background-color:rgb(9, 137, 211);
+   }
+
+   .nav li:hover > ul {
+    display:block;background-color: rgb(9, 137, 211);
+   }
+
+   .nav li ul li {
+    position:relative;background-color: rgb(9, 137, 211);
+   }
+
+   .nav li ul li ul { padding-left: 1px;
+    left:-140px;
+    top:0px;
+   }
+
+#banner {width: 100%; height: 450px;
+    border: 1px solid black;
+    background-size: 100% ,100%;
+    margin: auto;
+    animation: banner 10s infinite;
+    animation-direction: alternate-reverse;
+    padding-top: 40px;
+        }
+
+@keyframes banner { 
+    0%, 45% {
+    background-image:url(c:/Matias/Programacion_II/proyecto_programacion/img/fuegoartificial.jpg) ;
+    opacity: 1.0;}
+46%, 50% {opacity: 0.1;}
+51%, 95% {background-image: url(c:/Matias/Programacion_II/proyecto_programacion/img/festejo.jpg);
+opacity: 1.0;}
+96% , 100% {opacity: 0.1;}
+}
+
+
+#separadora {
+        /* La línea: */
+        width: 90%;
+        margin: 5%;
+        height:4px;
+        background-color:rgb(11, 11, 39);
+        background-color:linear-gradient(blue,white);
+        border-bottom:1px solid #416371;
+        overflow:hidden;
+    }
+
+.Noticias {
+    width: 90%;height: 400px;
+    padding-top: 0px; margin: 5%;
+    }
+
+.Noticias div {
+    width: 31%;
+    height: 400px; 
+    padding-left: 1%;
+    padding-right: 1%; 
+    float: left; 
+    padding-top: 0px;
+}
+
+.Noticias div #titulo {
+    width: 80%; 
+    height: 45px;
+    padding-left: 10%;
+     padding-right: 10%;
+    padding-top: 2%;
+}
+
+.Noticias div #titulo p { 
+    font-size: 20px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-align-last: center; background-color: rgb(108, 196, 247,0.5)
+}
+
+.Noticias div #foto {
+    width: 80%;
+    height: 40%;
+    padding-left: 10%; 
+    padding-right: 10%;
+}
+
+.Noticias div #foto img {
+    width: 100%;
+    height: 100%; 
+}
+
+.Noticias div #Contenido {
+    width: 80%;
+    height: 50%;
+    padding-left: 10%; 
+    padding-right: 10%;
+}
+
+.Noticias div #Contenido p {
+    width: 80%;
+    height: 90%;
+    padding-top:20px;
+    padding-left: 10%; 
+    padding-right: 10%;
+    background-color:rgb(145, 145, 167,0.5);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Redes {
+    width: 90%;
+    height: 400px;
+    padding-top: 0px; 
+    margin: 5%;
+}
+
+.Redes div {
+    width: 31%;
+    height: 400px; 
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left; 
+    padding-top: 0px;
+}   
+
+.Redes div #redsocial {
+    width: 100%; 
+    height: 100%;
+} 
+.Redes div #redsocial video{
+    width: 100%;
+}
+
+#pie {
+    width: 100%; 
+    height: 50px;
+    background: rgb(2,0,36);
+} 
+
+#pie p{
+    font-size: 100%;
+    text-align: center;
+}
